@@ -1,6 +1,6 @@
 {
-  "appId": "io.ionic.starter",
-  "appName": "MAS Starter",
+  "appId": "io.ionic.sidemenutabs",
+  "appName": "Sidemenu + Tabs",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "build",
