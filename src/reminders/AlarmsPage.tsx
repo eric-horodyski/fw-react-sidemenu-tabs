@@ -9,7 +9,7 @@ import {
 } from "@ionic/react";
 import React from "react";
 
-const InboxPage: React.FC = () => {
+const AlarmsPage: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
@@ -17,20 +17,20 @@ const InboxPage: React.FC = () => {
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonTitle>Inbox</IonTitle>
+          <IonTitle>Alarms</IonTitle>
         </IonToolbar>
       </IonHeader>
 
       <IonContent>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Inbox</IonTitle>
+            <IonTitle size="large">Alarms</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <p className="ion-padding">No new messages!</p>
+        <p className="ion-padding">No alarms set!</p>
       </IonContent>
     </IonPage>
   );
 };
 
-export default InboxPage;
+export default AlarmsPage;
