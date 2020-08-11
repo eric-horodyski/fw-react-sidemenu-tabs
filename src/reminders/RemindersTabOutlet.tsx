@@ -13,7 +13,7 @@ import RemindersPage from "./RemindersPage";
 import AlarmsPage from "./AlarmsPage";
 import StopwatchPage from "./StopwatchPage";
 
-const RemindersTabs: React.FC<RouteComponentProps> = ({ match }) => {
+const RemindersTabOutlet: React.FC<RouteComponentProps> = ({ match }) => {
   return (
     <IonTabs>
       <IonRouterOutlet id="reminders">
@@ -56,4 +56,4 @@ const RemindersTabs: React.FC<RouteComponentProps> = ({ match }) => {
   );
 };
 
-export default RemindersTabs;
+export default RemindersTabOutlet;

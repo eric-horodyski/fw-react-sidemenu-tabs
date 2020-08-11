@@ -17,7 +17,7 @@ import {
 import SentPage from "./SentPage";
 import ArchivedPage from "./ArchivedPage";
 
-const MailTabs: React.FC<RouteComponentProps> = ({ match }) => {
+const MailTabOutlet: React.FC<RouteComponentProps> = ({ match }) => {
   return (
     <IonTabs>
       <IonRouterOutlet id="mail">
@@ -52,4 +52,4 @@ const MailTabs: React.FC<RouteComponentProps> = ({ match }) => {
   );
 };
 
-export default MailTabs;
+export default MailTabOutlet;

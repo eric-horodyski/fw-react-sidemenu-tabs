@@ -12,7 +12,7 @@ import { newspaperOutline, starOutline } from "ionicons/icons";
 import UnreadNewsPage from "./UnreadNewsPage";
 import FavoriteNewsPage from "./FavoriteNewsPage";
 
-const NewsTabs: React.FC<RouteComponentProps> = ({ match }) => {
+const NewsTabOutlet: React.FC<RouteComponentProps> = ({ match }) => {
   return (
     <IonTabs>
       <IonRouterOutlet id="news">
@@ -46,4 +46,4 @@ const NewsTabs: React.FC<RouteComponentProps> = ({ match }) => {
   );
 };
 
-export default NewsTabs;
+export default NewsTabOutlet;

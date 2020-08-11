@@ -2,10 +2,10 @@ import React from "react";
 import { IonApp, IonRouterOutlet, IonSplitPane } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import { Redirect, Route } from "react-router-dom";
-import Menu from "./components/Menu";
-import NewsTabs from "./news/NewsTabs";
-import MailTabs from "./mail/MailTabs";
-import RemindersTabs from "./reminders/RemindersTabs";
+import Menu from "./menu/Menu";
+import NewsTabOutlet from "./news/NewsTabOutlet";
+import MailTabOutlet from "./mail/MailTabOutlet";
+import RemindersTabOutlet from "./reminders/RemindersTabOutlet";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -33,10 +33,10 @@ const App: React.FC = () => {
         <IonSplitPane contentId="main">
           <Menu />
           <IonRouterOutlet id="main">
-            <Route path="/mail" component={MailTabs} />
-            <Route path="/news" component={NewsTabs} />
-            <Route path="/reminders" component={RemindersTabs} />
-            <Redirect from="/" to="/mail" exact />
+            <Route path="/mail" component={MailTabOutlet} />
+            <Route path="/news" component={NewsTabOutlet} />
+            <Route path="/reminders" component={RemindersTabOutlet} />
+            <Redirect from="/" to="/mail" exact={true} />
           </IonRouterOutlet>
         </IonSplitPane>
       </IonReactRouter>
